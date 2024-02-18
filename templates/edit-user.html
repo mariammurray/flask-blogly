@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Create a User</h1>
+
+<form action="/users/<int:user-id>/edit" method="post">
+<p>First Name</p>
+<input type="text" name = "first" placeholder={{% first %}}>
+<p>Last Name</p>
+<input type="text" name = "last" placeholder={{% last %}}>
+<p>Profile Image</p>
+<input type="text" name = "url" placeholder={{% url %}}>
+<button type="submit"></button>
+
+
+</form>
+
+{% endblock %}

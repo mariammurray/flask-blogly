@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<p>
+    <img src= {{ % url % }} >
+    <h1>{{% first, last %}}</h1>
+    <button action="/users/<int:user-id>/edit" method="get"> edit </button> <button action="/users/[user-id]/delete" method="post"> delete </button>
+</p>
+
+{% endblock %}
